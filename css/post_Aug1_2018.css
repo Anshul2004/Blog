@@ -1,0 +1,89 @@
+@media (min-width: 10px) {
+    body{
+        background: black;
+    }
+}
+@media (min-width: 1500px) {
+    body{
+        background-size: 100%, 50%;
+        background-attachment: fixed;
+        background-position: center;
+        background-image: url("https://images.unsplash.com/photo-1533059791768-d5336afe8795?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=380d12f0f686594e9ae1cf6faa5bbc7f&auto=format&fit=crop&w=3298&q=80");
+    }
+}
+body a{
+  color: white;
+}
+/*Title area*/
+#title-area{
+  text-align: center;
+  padding-bottom: 10em;
+}
+#title-area h2{
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3em;
+}
+/*Container*/
+.container{
+  padding: 1em;
+}
+/*Code box*/
+.code-block{
+  background-color: #eaeaea;
+  padding: 1em;
+}
+/*Subtitles*/
+.subtitle{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 2.5em;
+}
+/*Info*/
+.info{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+  text-align: left;
+  text-indent: 2em;
+}
+/*Contact*/
+#contact{
+  background-color: grey;
+  padding: 1em;
+  margin-top: 10em;
+}
+#contact p{
+  text-align: center;
+  padding: 1em;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+}
+/*Code block*/
+pre{
+  white-space: pre-wrap;
+}
+/*Lists*/
+#prerequisite-area{
+  padding: 1em;
+}
+#prerequisite-area li{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+}
+/*Back*/
+#back a{
+  font-size: 2em;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+#back a:hover{
+  color: grey;
+  text-decoration: underline;
+}

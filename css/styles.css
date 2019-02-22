@@ -1,0 +1,89 @@
+/*Background styles*/
+body{
+    background-image: url('../res/blogHome.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+/*Text Area Styles*/
+#title-area h1{
+    font-family: "Pacifico", serif;
+    font-size: 6vw;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 10%;
+    color: black;
+}
+#title-area p{
+    font-family: "Raleway", serif;
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: black;
+}
+
+/*Description Area Styles*/
+#short-description{
+    background: white;
+    padding: 5%;
+    margin-top: 15%;
+}
+#short-description h1{
+    font-family: "Raleway", serif;
+    font-size: 2vw;
+    color:#494949;
+}
+#description-content{
+    font-family: "Raleway", serif;
+    font-size: 1.5vw;
+    color: #494949;
+    line-height: 250%;
+    text-indent: 5%;
+    margin-top: 5%;
+}
+
+/*Entries Area Styles*/
+#entries-area{
+    background-color: #e8e8e8;
+    padding-bottom: 8%;
+}
+#entries-area h1{
+    font-family: "Raleway", serif;
+    font-size: 3vw;
+    margin-left: 30%;
+    color: #494949;
+}
+#entries-area a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 2vw;
+    text-decoration: none;
+    color: #494949;
+    margin-left: 20%;
+}
+#entries-area a:hover{
+    color: grey;
+    font-size: 2vw;
+    margin-left: 20%;
+}
+#entries-area td{
+    padding-top: 5%;
+    margin-left: 20%;
+}
+
+/*Footer Area Styles*/
+#main-footer{
+    margin-top: -20px;
+    padding-bottom: 5%;
+    background: white;
+}
+#main-footer p{
+    font-family: "Raleway", serif;
+    font-size: 1vw;
+    padding-top: 5%;
+    margin-left: 10%;
+}

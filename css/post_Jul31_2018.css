@@ -1,0 +1,122 @@
+@media (min-width: 10px) {
+    body{
+        background: black;
+    }
+}
+@media (min-width: 1500px) {
+    body{
+        background-size: 100%, 50%;
+        background-attachment: fixed;
+        background-position: center;
+        background-image: url("https://images.unsplash.com/photo-1533101024964-f465d7ac6498?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b0c744f74562f52f83aa86fd375c585&auto=format&fit=crop&w=2550&q=80");
+    }
+}
+body a{
+    color: white;
+}
+/*Back*/
+#back a{
+  font-size: 2em;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+#back a:hover{
+  color: grey;
+  text-decoration: underline;
+}
+/*Title area*/
+#title-area{
+  text-align: center;
+  padding-bottom: 7em;
+}
+#title-area h2{
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3em;
+}
+/*Code box*/
+.code-box{
+  background-color: #eaeaea;
+  padding: 1em;
+}
+/*Sub-titles*/
+body h1{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 1.5em;
+}
+/*Descriptions*/
+#intro{
+  padding: 1em;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 1.5em;
+  padding-bottom: 3em;
+}
+#intro p{
+  text-indent: 2em;
+}
+#info{
+  padding: 1em;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 1.5em;
+  padding-bottom: 3em;
+}
+#info p{
+  text-indent: 2em;
+}
+#ex1{
+  padding: 1em;
+}
+#ex1 h1{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 2.5em;
+}
+#ex1 div{
+  margin-bottom: 3em;
+}
+/*Principles*/
+#principles{
+  padding: 1em;
+}
+#principles p{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 1.5em;
+  text-align: left;
+  text-indent: 2em;
+}
+#principles h2{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 3em;
+}
+#principles h1{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 3em;
+}
+/*Contact*/
+#contact{
+  background-color: grey;
+  padding: 1em;
+  margin-top: 8em;
+}
+#contact p{
+  text-align: center;
+  padding: 1em;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+}
+/*Code block*/
+pre{
+  white-space: pre-wrap;
+}
