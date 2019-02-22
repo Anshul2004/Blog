@@ -1,122 +1,138 @@
-@media (min-width: 10px) {
-    body{
-        background: black;
-    }
+/*Background Styles*/
+body{
+  background: #eaeaea;
+  margin: 0;
+  padding: 0;
 }
-@media (min-width: 1500px) {
-    body{
-        background-size: 100%, 50%;
-        background-attachment: fixed;
-        background-position: center;
-        background-image: url("https://images.unsplash.com/photo-1533101024964-f465d7ac6498?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b0c744f74562f52f83aa86fd375c585&auto=format&fit=crop&w=2550&q=80");
-    }
+
+/*Back Link Styles*/
+#back{
+  margin-left: 3%;
+  margin-top: 3%;
 }
-body a{
-    color: white;
-}
-/*Back*/
 #back a{
-  font-size: 2em;
-  color: white;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", serif;
+  font-size: 2vw;
   text-decoration: none;
+  color: #494949;
+  border-radius: 10px;
+  border: 2px solid #494949;
+  padding: 0.75% 2% 0.75% 2%;
 }
 #back a:hover{
-  color: grey;
-  text-decoration: underline;
+  background: white;
 }
-/*Title area*/
+
+/*Title Area Styles*/
 #title-area{
-  text-align: center;
-  padding-bottom: 7em;
+  margin-left: 10%;
+  margin-top: 5%;
 }
-#title-area h2{
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  font-size: 3em;
+#title-area h1{
+  font-family: "Raleway", serif;
+  font-size: 3vw;
+  color: #494949;
 }
-/*Code box*/
-.code-box{
-  background-color: #eaeaea;
-  padding: 1em;
+#title-area p{
+  font-family: "Raleway", serif;
+  font-size: 1vw;
+  color: #494949;
+  margin-left: 60%;
 }
-/*Sub-titles*/
-body h1{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 1.5em;
-}
-/*Descriptions*/
+
+/*Intro Area Styles*/
 #intro{
-  padding: 1em;
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 1.5em;
-  padding-bottom: 3em;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#intro h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
 }
 #intro p{
-  text-indent: 2em;
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
 }
+
+/*Info Area Styles*/
 #info{
-  padding: 1em;
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 1.5em;
-  padding-bottom: 3em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#info h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
 }
 #info p{
-  text-indent: 2em;
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
 }
+
+/*Example 1 Styles*/
 #ex1{
-  padding: 1em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 #ex1 h1{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  font-size: 2.5em;
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
 }
-#ex1 div{
-  margin-bottom: 3em;
-}
-/*Principles*/
+
+/*Principles Styles*/
 #principles{
-  padding: 1em;
-}
-#principles p{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  font-size: 1.5em;
-  text-align: left;
-  text-indent: 2em;
-}
-#principles h2{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  font-size: 1.5em;
-  padding-top: 3em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 #principles h1{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  font-size: 3em;
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
 }
-/*Contact*/
-#contact{
-  background-color: grey;
-  padding: 1em;
-  margin-top: 8em;
+#principles h2{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
 }
-#contact p{
-  text-align: center;
-  padding: 1em;
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5em;
+#principles p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
 }
-/*Code block*/
-pre{
-  white-space: pre-wrap;
+
+/*Footer Area Styles*/
+#main-footer{
+  margin-top: 5%;
+  padding-bottom: 5%;
+  background: white;
+}
+#main-footer p{
+  font-family: "Raleway", serif;
+  font-size: 1vw;
+  padding-top: 5%;
+  margin-left: 10%;
+}
+
+/*Global Styles*/
+#line{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.code-box{
+  background: #f7f7f7;
+  margin: 0;
+  overflow: scroll;
 }

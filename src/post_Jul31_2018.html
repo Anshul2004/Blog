@@ -1,148 +1,168 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Keywords" content="Anshul, Kashyap, Blog, Programming, IOS, Android, Swing, Java, Python, Servers, Data, Web development">
-    <meta name="Description" content="July 31, 2018: The principles of OOP">
-    <title>July 31, 2018: The Principles of OOP</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="shortcut icon" href="https://anshul2004.github.io/Blog/res/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
-    <link href="https://anshul2004.github.io/Blog/css/post_Jul31_2018.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <script>
-      AOS.init();
-    </script>
-    <div id="back" data-aos="fade-in" data-aos-duration="1500">
-      <a href="https://anshul2004.github.io/Blog/index.html">Home</a>
-    </div>	
-    <div id="title-area" data-aos="fade-up" data-aos-duration="1500">
-      <h2>July 31, 2018: The Principles of OOP</h2>
-    </div>
-    <div id="intro">
-      <h1 data-aos="fade-left" data-aos-duration="1000">History:</h1>
-      <p data-aos="fade-left" data-aos-duration="1500">Before the creation of OOP (Object Oriented Programming) languages, some programs and algorithms such as varied data structure and typed programs were really difficult to implement. The first OOP language was published in 1985 by Bjarne Stroustrup and went by the name of C++. This revolutionized the programming industry and allowed programmers to create effecint and easy to understand programs with low compiling times.</p>
-    </div>
-    <div id="info">
-      <h1 data-aos="fade-left" data-aos-duration="1000">What Is an OOP Language?:</h1>
-      <p data-aos="fade-left" data-aos-duration="1500">Wait... but what is an OOP language? An Object Oriented Programming language is a programming paradigram based on the ideas of having <b>Classes</b> and <b>Objects</b> to represent data types and the data itself. Let me give you an example. Say you create a <b>Person Class</b>. This class can have multiple attributes that any person object has in common such as... eye color, height, weight, etc. When you create a <b>Person Object</b>, you are storing some data that represents the specific attributes of that specific object given the Person datatype. Think of the class as a blueprint and the object as the actual "thing". You can have a blueprint for a generic house, but you get to decide the house's <b>wall color, flooring, etc</b></p>
-    </div>
-    <div id="ex1">
-      <h1 data-aos="fade-left" data-aos-duration="1000">Example Implementation:</h1>
-      <div class="code-box"  data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
-          /*In Java, when creating an object, you have to state the data type (Class), then the name of the var/object, and finally set the initial value of the object*/
-          int b = 0;
-          
-          '''In Python, when creating an object, you have to state the name of the var/object, then set the value of that object. The data type (Class) is automatically initialized'''
-          b = 0
-          
-          /*The initial values don't have to be set when creating the object in java. But beware of a NullPointerException*/
-          </pre>
-        </code>
-      </div>
-    </div>
-    <div id="principles">
-      <h1 data-aos="fade-left" data-aos-duration="1000">Basic Principles:</h1>
-      <p data-aos="fade-left" data-aos-duration="1500">There are four basic principles that you have to know when it comes to OOP. They are <b>Encapsulation, Inheritance, Abstraction, and Polymorphism</b>.</p>
-      <h2 data-aos="fade-left" data-aos-duration="1000"><b>Encapsulation:</b> Hiding unnecessary details that will not be useful when creating and using objects to help create a simple and easy to use interface.</h2>
-      <div class="code-box"  data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
-          package Core;
+    <head>
+        <!--Meta Data-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="Anshul, Kashyap, Blog, Programming, IOS, Android, Swing, Java, Python, Servers, Data, Web development, Cyber, Blaze">
+        <meta name="Description" content="July 31, 2018: The principles of OOP">
+        <!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="../css/post_Jul31_2018.css">
+        <!--Custom Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <!--Tab Information-->
+        <link rel="shortcut icon" href="../res/favicon.png">
+        <title>July 31, 2018: The Principles of OOP</title>
+    </head>
+    <body>
+        <!--Back Link-->
+        <div id="back">
+            <a href="../index.html">Home</a>
+        </div>
+        <!--Title Area Elements-->
+        <div id="title-area">
+            <h1>July 31, 2018: The Principles of OOP</h1>
+            <p>- Anshul Kashyap; July 31, 2018</p>
+        </div>
+        <!--Intro Area Elements-->
+        <div id="intro">
+            <h1>History:</h1>
+            <p>Before the creation of OOP (Object Oriented Programming) languages, some programs and algorithms such as varied data structure and typed programs were really difficult to implement. The first OOP language was published in 1985 by Bjarne Stroustrup and went by the name of C++. This revolutionized the programming industry and allowed programmers to create effecint and easy to understand programs with low compiling times.</p>
+        </div>
+        <hr id="line">
+        <!--Info Area Elements-->
+        <div id="info">
+            <h1>What Is an OOP Language?:</h1>
+            <p>Wait... but what is an OOP language? An Object Oriented Programming language is a programming paradigram based on the ideas of having <b>Classes</b> and <b>Objects</b> to represent data types and the data itself. Let me give you an example. Say you create a <b>Person Class</b>. This class can have multiple attributes that any person object has in common such as... eye color, height, weight, etc. When you create a <b>Person Object</b>, you are storing some data that represents the specific attributes of that specific object given the Person datatype. Think of the class as a blueprint and the object as the actual "thing". You can have a blueprint for a generic house, but you get to decide the house's <b>wall color, flooring, etc</b></p>
+        </div>
+        <hr id="line">
+        <!--Example 1 Elements-->
+        <div id="ex1">
+            <h1>Example Implementation:</h1>
+            <div class="code-box">
+                <code>
+                    <pre>
+        /*In Java, when creating an object, you have to state the data type (Class), then the name of the var/object, and finally set the initial value of the object*/
+        int b = 0;
+                    
+        '''In Python, when creating an object, you have to state the name of the var/object, then set the value of that object. The data type (Class) is automatically initialized'''
+        b = 0
+                    
+        /*The initial values don't have to be set when creating the object in java. But beware of a NullPointerException*/
+                    </pre>
+                </code>
+            </div>
+        </div>
+        <hr id="line">
+        <!--Principles Area Elements-->
+        <div id="principles">
+            <h1>Basic Principles:</h1>
+            <p>There are four basic principles that you have to know when it comes to OOP. They are <b>Encapsulation, Inheritance, Abstraction, and Polymorphism</b>.</p>
+            <hr id="line">
+            <!--Encapsulation Area Elements-->
+            <h2><b>Encapsulation:</b> Hiding unnecessary details that will not be useful when creating and using objects to help create a simple and easy to use interface.</h2>
+            <div class="code-box">
+                <code>
+                    <pre>
           public class Individual {
-	          private int[] gene;
-	          public Individual(int[] gene) {
-		          this.gene = gene;
+              private int[] gene;
+              public Individual(int[] gene) {
+                  this.gene = gene;
+              }
+              public int[] getGene() {return gene;}
+              public int calcFitness(int[] target) {
+                  int fitness = 0;
+                  for(int i = 0; i < gene.length; i++) {
+                      fitness = fitness + (255 - Math.abs(gene[i] - target[i]));
                   }
-	          public int[] getGene() {return gene;}
-	          public int calcFitness(int[] target) {
-		          int fitness = 0;
-		          for(int i = 0; i < gene.length; i++) {
-			          fitness = fitness + (255 - Math.abs(gene[i] - target[i]));
-		          }
-		          fitness = fitness / 3;
-		          return fitness;
-	          }
+                  fitness = fitness / 3;
+                  return fitness;
+              }
           }
-          </pre>
-        </code>
-      </div>
-      <p data-aos="fade-left" data-aos-duration="1500">This is a simple class I created when I was working on a generic <b>Genetic Algorithm</b>. Here you can see that the gene object is not accessible outside of the class. In java, when you declare data types, you also have to specify the availability of that object. If it's public, it can be accessed outside of the class. But if it's private, it can only be accessed inside of the class. You can see that this class is incorporating the idea of encapsulation which allows the programmer to work with a simple and clean interface</p>
-      <h2><b>Inheritance:</b> enables new objects to take on the properties of existing objects</h2>
-      <div class="code-box"  data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
-          package Core;
+                    </pre>
+                </code>
+            </div>
+            <p>This is a simple class I created when I was working on a generic <b>Genetic Algorithm</b>. Here you can see that the gene object is not accessible outside of the class. In java, when you declare data types, you also have to specify the availability of that object. If it's public, it can be accessed outside of the class. But if it's private, it can only be accessed inside of the class. You can see that this class is incorporating the idea of encapsulation which allows the programmer to work with a simple and clean interface</p>
+            <hr id="line">
+            <!--Inheritance Area Elements-->
+            <h2><b>Inheritance:</b> enables new objects to take on the properties of existing objects</h2>
+            <div class="code-box">
+                <code>
+                    <pre>
           public class Individual {
-	          private int[] gene;
-	          public Individual(int[] gene) {
-		          this.gene = gene;
+              private int[] gene;
+              public Individual(int[] gene) {
+                  this.gene = gene;
+              }
+              public int[] getGene() {return gene;}
+              public int calcFitness(int[] target) {
+                  int fitness = 0;
+                  for(int i = 0; i < gene.length; i++) {
+                      fitness = fitness + (255 - Math.abs(gene[i] - target[i]));
                   }
-	          public int[] getGene() {return gene;}
-	          public int calcFitness(int[] target) {
-		          int fitness = 0;
-		          for(int i = 0; i < gene.length; i++) {
-			          fitness = fitness + (255 - Math.abs(gene[i] - target[i]));
-		          }
-		          fitness = fitness / 3;
-		          return fitness;
-	          }
+                  fitness = fitness / 3;
+                  return fitness;
+              }
           }
-          
+                    
           public class Anshul extends Individual{
-            public Anshul(int[] gene, int skillLevel){
-              super(int[] gene);
-              skillLevel = 1000000000;
-            }
+              public Anshul(int[] gene, int skillLevel){
+                  super(int[] gene);
+                  skillLevel = 1000000000;
+              }
           }
-          </pre>
-        </code>
-      </div>
-      <p data-aos="fade-left" data-aos-duration="1500">Here you see two classes, one the original Individual class and a new class named Anshul. We can see multiple keywords signifying that the idea of inheritance is being used. When creating the Anshul class, observe the key words <b>extends</b> and <b>super</b>. This shows that the Anshul class is <b>inheriting</b> the attributes stated in the Indiviudal class and setting their values in the constructor.</p>
-      <h2><b>Abstraction:</b> hides the internal implementation details.</h2>
-      <div class="code-box" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
-          package Core;
+                    </pre>
+                </codes>
+            </div>
+            <p>Here you see two classes, one the original Individual class and a new class named Anshul. We can see multiple keywords signifying that the idea of inheritance is being used. When creating the Anshul class, observe the key words <b>extends</b> and <b>super</b>. This shows that the Anshul class is <b>inheriting</b> the attributes stated in the Indiviudal class and setting their values in the constructor.</p>
+            <hr id="line">
+            <!--Abstraction Area Elements-->
+            <h2><b>Abstraction:</b> hides the internal implementation details.</h2>
+            <div class="code-box">
+                <code>
+                    <pre>
           public class Individual {
-	          private int[] gene;
-	          public Individual(int[] gene) {
-		          this.gene = gene;
+              private int[] gene;
+              public Individual(int[] gene) {
+                  this.gene = gene;
+              }
+              public int[] getGene() {return gene;}
+              public int calcFitness(int[] target) {
+                  int fitness = 0;
+                  for(int i = 0; i < gene.length; i++) {
+                      fitness = fitness + (255 - Math.abs(gene[i] - target[i]));
                   }
-	          public int[] getGene() {return gene;}
-	          public int calcFitness(int[] target) {
-		          int fitness = 0;
-		          for(int i = 0; i < gene.length; i++) {
-			          fitness = fitness + (255 - Math.abs(gene[i] - target[i]));
-		          }
-		          fitness = fitness / 3;
-		          return fitness;
-	          }
+                  fitness = fitness / 3;
+                  return fitness;
+              }
           }
-          </pre>
-        </code>
-      </div>
-      <p data-aos="fade-left" data-aos-duration="1500">Take a look at the fitness variable in the calcFitness() function. We can see that fitness is <b>local</b> within calcFitness() and not <b>global</b>. This means that fitness is <b>immutable</b> outside of calcFitness(). This shows that some vars and objects in the program are actually hidden from the user, meaning it is not accessible outside the given function or class</p>
-      <h2 data-aos="fade-left" data-aos-duration="1000"><b>Polymorphism: </b> the condition of occurring in several different forms.</h2>
-      <div class="code-box" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
+                    </pre>
+                </code>
+            </div>
+            <p>Take a look at the fitness variable in the calcFitness() function. We can see that fitness is <b>local</b> within calcFitness() and not <b>global</b>. This means that fitness is <b>immutable</b> outside of calcFitness(). This shows that some vars and objects in the program are actually hidden from the user, meaning it is not accessible outside the given function or class</p>
+            <hr id="line">
+            <!--Polymorphism Area Elements-->
+            <h2><b>Polymorphism: </b> the condition of occurring in several different forms.</h2>
+            <div class="code-box">
+                <code>
+                    <pre>
           Deer d = new Deer();
           Animal a = d;
           Vegetarian v = d;
           Object o = d;
-          </pre>
-        </code>
-      </div>
-      <p data-aos="fade-left" data-aos-duration="1500">Say you have 4 classes: <b>Object, Deer, Animal, and Vegetarian</b>. Deer extends Vegetarian, Vegetarian extends Animal and all 3 classes initially extend Object. Here we can see polymorphism take place since the Deer object can take many different forms including Animal, Vegetarian, and Object. This shows that in OOP languages, we are able to create different classes that inherit attributes from each other. This allows us to create objects based on existing objects that don't have the same classes.</p>
-    </div>
-    <div id="contact">
-      <p data-aos="fade-right" data-aos-duration="1000">Feel free to contact me via <a href="mailto:cyberblaze.12.2004@gmail.com?Subject=Hey">Email</a>. Please only provide positive and helpful critisism :)</p>
-    </div>
-  </body>
+                    </pre>
+                </code>
+            </div>
+            <p>Say you have 4 classes: <b>Object, Deer, Animal, and Vegetarian</b>. Deer extends Vegetarian, Vegetarian extends Animal and all 3 classes initially extend Object. Here we can see polymorphism take place since the Deer object can take many different forms including Animal, Vegetarian, and Object. This shows that in OOP languages, we are able to create different classes that inherit attributes from each other. This allows us to create objects based on existing objects that don't have the same classes.</p>
+        </div>
+        <!--Footer Area-->
+        <div id="main-footer">
+            <p>&copy; 2018 Anshul</p>
+            <a href="mailto:cyberblaze2004@gmail.com">
+                <img src="../res/email.png" style="max-width: 6%; margin-left: 80%; margin-top: -3%;">
+            </a>
+        </div>
+    </body>
 </html>
