@@ -1,84 +1,86 @@
-@media (min-width: 10px) {
-    body{
-        background: black;
-    }
+/*Background Styles*/
+body{
+  background: #eaeaea;
+  margin: 0;
+  padding: 0;
 }
-@media (min-width: 1500px) {
-    body{
-        background-size: 100%, 50%;
-        background-attachment: fixed;
-        background-position: center;
-        background-image: url("https://images.unsplash.com/photo-1533134547694-a73f7ff2ca3b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fb395184bdb273a2b62ee5a360a8fa0&auto=format&fit=crop&w=2550&q=80");
-    }
+
+/*Back Link Styles*/
+#back{
+  margin-left: 3%;
+  margin-top: 3%;
 }
-body a{
-  color: white;
-}
-/*Title area*/
-#title-area{
-  text-align: center;
-  padding-bottom: 10em;
-}
-#title-area h2{
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  font-size: 3em;
-}
-/*Container*/
-.container{
-  padding: 1em;
-}
-/*Code box*/
-.code-block{
-  background-color: #eaeaea;
-  padding: 1em;
-}
-/*Subtitles*/
-.subtitle{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 2.5em;
-}
-/*Info*/
-.info{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  font-size: 1.5em;
-  padding-bottom: 2em;
-  text-align: left;
-  text-indent: 2em;
-}
-/*Contact*/
-#contact{
-  background-color: grey;
-  padding: 1em;
-  margin-top: 10em;
-}
-#contact p{
-  text-align: center;
-  padding: 1em;
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5em;
-}
-/*Code block*/
-pre{
-  white-space: pre-wrap;
-}
-/*Back*/
 #back a{
-  font-size: 2em;
-  color: white;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", serif;
+  font-size: 2vw;
   text-decoration: none;
+  color: #494949;
+  border-radius: 10px;
+  border: 2px solid #494949;
+  padding: 0.75% 2% 0.75% 2%;
 }
 #back a:hover{
-  color: grey;
-  text-decoration: underline;
+  background: white;
 }
-/*Click To See*/
+
+/*Title Area Styles*/
+#title-area{
+  margin-left: 10%;
+  margin-top: 5%;
+}
+#title-area h1{
+  font-family: "Raleway", serif;
+  font-size: 3vw;
+  color: #494949;
+}
+#title-area p{
+  font-family: "Raleway", serif;
+  font-size: 1vw;
+  color: #494949;
+  margin-left: 60%;
+}
+
+/*Overall Container Styles*/
+.container{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .container h1{
-  font-size: 2em;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+.container p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Footer Area Styles*/
+#main-footer{
+  margin-top: 5%;
+  padding-bottom: 5%;
+  background: white;
+}
+#main-footer p{
+  font-family: "Raleway", serif;
+  font-size: 1vw;
+  padding-top: 5%;
+  margin-left: 10%;
+}
+
+/*Global Styles*/
+#line{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.code-block{
+  background: #f7f7f7;
+  margin: 0;
+  overflow: scroll;
 }

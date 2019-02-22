@@ -1,204 +1,239 @@
 <!DOCTYPE html>
+
 <html>
     <head>
+        <!--Meta Data-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Keywords" content="Anshul, Kashyap, Blog, Programming, IOS, Android, Swing, Java, Python, Servers, Data, Web development">
-        <meta name="Description" content="Aug 2, 2018: Fireworks!!!">
+        <meta name="Keywords" content="Anshul, Kashyap, Blog, Programming, IOS, Android, Swing, Java, Python, Servers, Data, Web development, Cyber, Blaze">
+        <meta name="Description" content="August 2, 2018: Fireworks!!!">
+        <!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="../../css/post_Aug2_2018.css">
+        <!--Custom Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <!--Tab Information-->
+        <link rel="shortcut icon" href="../../res/favicon.png">
         <title>August 2, 2018: Fireworks!!!</title>
-        <link rel="shortcut icon" href="https://anshul2004.github.io/Blog/res/favicon.png">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
-        <link href="https://anshul2004.github.io/Blog/css/post_Aug2_2018.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <!--Back Link-->
         <div id="back">
-            <a href="https://anshul2004.github.io/Blog/index.html">Home</a>
+            <a href="../../index.html">Home</a>
         </div>
+        <!--Title Area Elements-->
         <div id="title-area">
-            <h2>August 2, 2018: Fireworks!!!</h2>
+            <h1>August 2, 2018: Fireworks!!!</h1>
+            <p>- Anshul Kashyap; August 2, 2018</p>
         </div>
+        <!--Introduction Area Elements-->
         <div class="container">
-            <h1 class="subtitle">Hello Everyone!!:</h1>
-            <p class="info">Hello everyone!!!. Ok, let me tell you a story. In sixth grade, I didn’t know the first thing about programming. But then I met two people. They were both passionate programmers and not just that… they also wanted to spread their knowledge and help other people learn as well. It’s because of them that I have such an interest in this field and want to really progress in it as well. I want to be just like them and teach as many people as I can about this field, software development in general, so that they might be able to grasp onto that passion and a new generation of amazing programmers will appear. Obviously, this blog is meant to teach people of all ages. You are never, and I mean never, too young or too old to learn anything. I just hope that I make a big change in this world.</p>
+            <h1>Hello Everyone:</h1>
+            <p>Ok, let me tell you a story. In sixth grade, I didn’t know the first thing about programming. But then I met two people. They were both passionate programmers and not just that... they also wanted to spread their knowledge and help other people learn as well. It’s because of them that I have such an interest in this field and want to really progress in it as well. I want to be just like them and teach as many people as I can about this field, software development in general, so that they might be able to grasp onto that passion and a new generation of amazing programmers will appear. Obviously, this blog is meant to teach people of all ages. You are never, and I mean never, too young or too old to learn anything. I just hope that I make a big change in this world.</p>
         </div>
+        <hr id="line">
+        <!--Overview Area Elements-->
         <div class="container">
-            <h1 class="subtitle">Overview:</h1>
-            <p class="info">Today, we will be looking at the Canvas API and how we can use it to make fun, slick, and interactive websites. We will be working on a small project in this tutorial I like to call Fireworks. We will be using the Canvas API to make a simple animation/interactive website. Sooo… let’s get started :) .</p>
+            <h1>Overview:</h1>
+            <p>Today, we will be looking at the Canvas API and how we can use it to make fun, slick, and interactive websites. We will be working on a small project in this tutorial I like to call Fireworks. We will be using the Canvas API to make a simple animation/interactive website. Sooo… let’s get started :) .</p>
         </div>
+        <hr id="line">
+        <!--Canvas Info Elements-->
         <div class="container">
-            <h1 class="subtitle">Canvas API Info:</h1>
-            <p class="info">The html5 “canvas” tag is used to draw graphics and can be used for multiple situations. Some of these include game development, other interactive websites, the professional use of graphics, etc. The list goes on. The Canvas API provides us with multiple pre-built functions that makes it easier for the programmer to draw graphics and make their websites more interactable.</p>
+            <h1>Canvas API Info:</h1>
+            <p>The html5 “canvas” tag is used to draw graphics and can be used for multiple situations. Some of these include game development, other interactive websites, the professional use of graphics, etc. The list goes on. The Canvas API provides us with multiple pre-built functions that makes it easier for the programmer to draw graphics and make their websites more interactable.</p>
         </div>
+        <hr id="line">
+        <!--Beginning Area Elements-->
         <div class="container">
             <h1 class="subtitle">Let’s Begin!!:</h1>
             <p class="info">Let’s start of by creating a simple Canvas using the canvas tag html5 provides us with.  Create a new canvas using the "canvas" tag and set the id to "canvas".</p>
         </div>
+        <hr id="line">
+        <!--Note Area Elements-->
         <div class="container">
-            <h1 class="subtitle">Note:</h1>
-            <p class="info">Most of the programming we will be doing in today’s entry will be javascript based. Make sure you have some knowledge of javascript and maybe even OOP programming(It will be a lot easier to understand).</p>
+            <h1>Note:</h1>
+            <p>Most of the programming we will be doing in today’s entry will be javascript based. Make sure you have some knowledge of javascript and maybe even OOP programming concepts(It will be a lot easier to understand).</p>
         </div>
+        <hr id="line">
+        <!--Good Stuff Elements-->
         <div class="container">
-            <h1 class="subtitle">Moving on to the Good Stuff:</h1>
-            <p class="info">Create your js file. To interact with the Canvas object in the html file, we have to create a new var that allows us to use the Canvas object in the js file. Observe the following.</p>
+            <h1>Moving on to the Good Stuff:</h1>
+            <p>Create your js file. To interact with the Canvas object in the html file, we have to create a new var that allows us to use the Canvas object in the js file. Observe the following.</p>
+            <div class="code-block">
+                <code>
+                    <pre>
+          //Creating the js Canvas object using the .getElementById() function
+          var canvas = document.getElementById("canvas");
+          //Setting the width and height of the canvas. Should be self explanatory :)
+          canvas.width = screen.width;
+          canvas.height = screen.height;
+          //Contains the necessary methods to draw graphics on the Canvas
+          var ctx = canvas.getContext('2d');
+                    </pre>
+                </code>
+            </div>
+            <p>Now we have created the Canvas object in the js file. Using this, we will be able to display graphics and manipulate them as well.</p>
+        </div>
+        <hr id="line">
+        <!--Event Listener Elements-->
+        <div class="container">
+            <h1>Introducing... EventListener!!:</h1>
+            <p>We will be able to create “fireworks” when the user clicks the screen. To do this we have to enable the canvas object to be able to “listen” for information, in this case when the user clicks on the canvas.</p>
             <div class="code-block">
                 <code>
                    <pre>
-                //Creating the js Canvas object using the .getElementById() function
-                var canvas = document.getElementById("canvas");
-                //Setting the width and height of the canvas. Should be self explanatory :)
-                canvas.width = screen.width;
-                canvas.height = screen.height;
-                //Contains the necessary methods to draw graphics on the Canvas
-                var ctx = canvas.getContext('2d');
+          canvas.addEventListener("click", click, false);
                    </pre>
                </code>
             </div>
-            <p class="info">Now we have created the Canvas object in the js file. Using this, we will be able to display graphics and manipulate them as well.</p>
+            <p>Here, you can see that .addEventListener() has three parameters. The first one is the type of event listener, in this case click. This is prebuilt into the Canvas API. It recognizes that “click” means that the click function will be used which as I said before, is prebuilt into the API. The second one is the function that will be executed in the js file after the Canvas is clicked, in this case click(). The last parameter is a boolean value representing whether or not the click function will “bubble” or not. In this case, it is not important so I will not go in depth.</p>
+            <p>Take a look for more information on bubbling: <a href="https://javascript.info/bubbling-and-capturing">https://javascript.info/bubbling-and-capturing</a></p>
         </div>
+        <hr id="line">
+        <!--Particles Area Elements-->>
         <div class="container">
-            <h1 class="subtitle">Introducing… EventListener!!:</h1>
-            <p class="info">We will be able to create “fireworks” when the user clicks the screen. To do this we have to enable the canvas object to be able to “listen” for information, in this case when the user clicks on the canvas.</p>
+            <h1>Particlesss:</h1>
+            <p>For this web application, we will be making fireworks. The fireworks will be made out of individual Particle objects. Let’s create the particle object constructor. Take note below.</p>
             <div class="code-block">
                 <code>
                    <pre>
-                canvas.addEventListener("click", click, false);
+          function Particle(x, y){
+              //x and y vals
+              this.x = x;
+              this.y = y;
+              //width and height vals
+              this.width = 8
+              this.height = 8
+              //vx and vy vals
+              this.vx = Math.round(Math.random() * 10);
+              this.vy = Math.round(Math.random() * 10);
+              //Conditionals to equal out the distribution
+              if(Math.round(Math.random()) % 2 == 0){this.vx = -this.vx;}
+              if(Math.round(Math.random()) % 2 == 0){this.vy = - this.vy;}
+          }
                    </pre>
                </code>
             </div>
-            <p class="info">Here, you can see that .addEventListener() has three parameters. The first one is the type of event listener, in this case click. This is prebuilt into the Canvas API. It recognizes that “click” means that the click function will be used which as I said before, is prebuilt into the API. The second one is the function that will be executed in the js file after the Canvas is clicked, in this case click(). The last parameter is a boolean value representing whether or not the click function will “bubble” or not. In this case, it is not important so I will not go in depth.</p>
-            <p class="info">Take a look for more information on bubbling: <a href="https://javascript.info/bubbling-and-capturing">https://javascript.info/bubbling-and-capturing</a></p>
+            <p>The particle object has multiple attributes. An x and y value to keep track of its’ position, a width and height to make it visible, a VELOCITY x and a VELOCITY y (This is very important as it simulates the gravitational effect for the particles), and finally, two conditional statements that allow the distribution of particles on the left and right to be random but decently equal.</p>
         </div>
+        <hr id="line">
+        <!--Global Variables Elements-->
         <div class="container">
-            <h1 class="subtitle">Particlesss:</h1>
-            <p class="info">For this web application, we will be making fireworks. The fireworks will be made out of individual Particle objects. Let’s create the particle object constructor. Take note below.</p>
-            <p class="info">In the js file, type the following:</p>
+            <h1>Global Variables:</h1>
+            <p>We need some type of array to store the x and y values of the particles. Let’s create two arrays, one to store the x values of the particles and one to store the y values.</p>
+            <p>In the js file, create four global vars:</p>
             <div class="code-block">
                 <code>
                    <pre>
-               function Particle(x, y){
-                  //x and y vals
-                  this.x = x;
-                  this.y = y;
-                  //width and height vals
-                  this.width = 8
-                  this.height = 8
-                  //vx and vy vals
-                  this.vx = Math.round(Math.random() * 10);
-                  this.vy = Math.round(Math.random() * 10);
-                  //Conditionals to equal out the distribution
-                  if(Math.round(Math.random()) % 2 == 0){this.vx = -this.vx;}
-                  if(Math.round(Math.random()) % 2 == 0){this.vy = - this.vy;}
-               }
-                   </pre>
-               </code>
-            </div>
-            <p class="info">The particle object has multiple attributes. An x and y value to keep track of its’ position, a width and height to make it visible, a VELOCITY x and a VELOCITY y (This is very important as it simulates the gravitational effect for the particles), and finally, two conditional statements that allow the distribution of particles on the left and right to be random but decently equal.</p>
-        </div>
-        <div class="container">
-            <h1 class="subtitle">Global Variables:</h1>
-            <p class="info">We need some type of array to store the x and y values of the particles. Let’s create two arrays, one to store the x values of the particles and one to store the y values.</p>
-            <p class="info">In the js file, create four global vars:</p>
-            <div class="code-block">
-                <code>
-                   <pre>
-                //x and y vals
-                var xInitial = [];
-                var yInitial = [];
-                //Box array stores the particles as individual objects
-                var box = [];
-                //The amount of particles generated per click
-                var max = 20;
+          //x and y vals
+          var xInitial = [];
+          var yInitial = [];
+          //Box array stores the particles as individual objects
+          var box = [];
+          //The amount of particles generated per click
+          var max = 20;
                    </pre>
                </code>
             </div>
         </div>
+        <hr id="line">
+        <!--Drawing Particles Elements-->
         <div class="container">
-            <h1 class="subtitle">Drawing the Particlesss:</h1>
-            <p class="info">Okay, say we created some particles. But… the particles themselves are just pieces of data storing the x, y, vx, vy, width, and height values. We aren’t really rendering or manipulating, rendering, or most importantly drawing the particles. We have to create another function that renders and draws the particles to the Canvas.</p>
-            <p class="info">In the js file, create draw function:</p>
+            <h1>Drawing the Particlesss:</h1>
+            <p>Okay, say we created some particles. But... the particles themselves are just pieces of data storing the x, y, vx, vy, width, and height values. We aren’t really rendering or manipulating, rendering, or most importantly drawing the particles. We have to create another function that renders and draws the particles to the Canvas.</p>
             <div class="code-block">
                 <code>
                    <pre>
-                Particle.prototype.draw = function(index){
-                   //Setting the rgba value to a random color, to help differentiate between particles
-                   //All the particles are different colors
-                   ctx.fillStyle = "rgba(" + Math.round(Math.round(Math.random() * 1000)/3.9) + ", " +     Math.round(Math.round(Math.random() * 1000)/3.9) + ", " + Math.round(Math.round(Math.random() * 1000)/3.9) + ", 0.8)";
-                   //Increasing velocity gives a better visual understanding of the gravitational effects
-                   this.vy += 1;
-                   //Changing the x and y vals
-                   this.x = this.x + this.vx;
-                   this.y = this.y + this.vy;
-                   //Drawing the rectangle to the Canvas
-                   ctx.fillRect(this.x, this.y, this.width, this.height);
-                };
+          Particle.prototype.draw = function(index){
+              //Setting the rgba value to a random color, to help differentiate between particles
+              //All the particles are different colors
+              ctx.fillStyle = "rgba(" + Math.round(Math.round(Math.random() * 1000)/3.9) + ", " +     Math.round(Math.round(Math.random() * 1000)/3.9) + ", " + Math.round(Math.round(Math.random() * 1000)/3.9) + ", 0.8)";
+              //Increasing velocity gives a better visual understanding of the gravitational effects
+              this.vy += 1;
+              //Changing the x and y vals
+              this.x = this.x + this.vx;
+              this.y = this.y + this.vy;
+              //Drawing the rectangle to the Canvas
+              ctx.fillRect(this.x, this.y, this.width, this.height);
+          };
                    </pre>
                </code>
             </div>
-            <p class="info">Here we can see that we are rendering the x and y values of a pixel object as well as drawing it to the Canvas as well. We are changing the x and y values based on the effects of the velocity parameters.</p>
+            <p>Here we can see that we are rendering the x and y values of a pixel object as well as drawing it to the Canvas as well. We are changing the x and y values based on the effects of the velocity parameters.</p>
         </div>
+        <hr id="line">
+        <!--Click Function Elements-->
         <div class="container">
-            <h1 class="subtitle"></h1>
-            <p class="info">We want to display a set of particles every time the user clicks on the Canvas right? To do this, we have to create a function that generates a new array of particles to represent a firework. Now, we want create a firework every time the user clicks, as stated above. Go back to the eventListener method. What should the name of the function be?? That’s right, we should name it “click”.</p>
+            <h1>Click Function:</h1>
+            <p>We want to display a set of particles every time the user clicks on the Canvas right? To do this, we have to create a function that generates a new array of particles to represent a firework. Now, we want create a firework every time the user clicks, as stated above. Go back to the eventListener method. What should the name of the function be?? That’s right, we should name it “click”.</p>
             <div class="code-block">
                 <code>
                    <pre>
-                function click(e){
-                   //For indexing purposes
-                   arrLength = xInitial.length;
-                   for(var i = 0; i < max; i++){
-                      //Setting the initial x and y values (the point where the user clicked) for each particle in the current firework
-                      xInitial.push(e.clientX);
-                      yInitial.push(e.clientY);
-                   }
-                   for(var i = 0; i < max; i++){
-                      //Adding the particles to the box var
-                      box.push(new Particle(xInitial[arrLength + i], yInitial[arrLength + i]));
-                   }
-                }
+          function click(e){
+              //For indexing purposes
+              arrLength = xInitial.length;
+              for(var i = 0; i < max; i++){
+                  //Setting the initial x and y values (the point where the user clicked) for each particle in the current firework
+                  xInitial.push(e.clientX);
+                  yInitial.push(e.clientY);
+              }
+              for(var i = 0; i < max; i++){
+                  //Adding the particles to the box var
+                  box.push(new Particle(xInitial[arrLength + i], yInitial[arrLength + i]));
+              }
+          }
                    </pre>
                </code>
             </div>
-            <p class="info">We can see that we are first adding the x and y values which are determined based on the point where the user clicked. Then we are creating a new Particle and adding it to box with the x and y values as the parameters.</p>
+            <p>We can see that we are first adding the x and y values which are determined based on the point where the user clicked. Then we are creating a new Particle and adding it to box with the x and y values as the parameters.</p>
         </div>
+        <hr id="line">
+        <!--Render Method Elements-->
         <div class="container">
-            <h1 class="subtitle">Render Method:</h1>
-            <p class="info">Finally!!! The heart of the project, the render method. Using this method, we will be able to update the frames and draw the particles onto the Canvas. This is the heart of the project and allows us to give the viewer an animation-like effect.</p>
-            <p class="info">In the js file:</p>
+            <h1>Render Method:</h1>
+            <p>Finally!!! The heart of the project, the render method. Using this method, we will be able to update the frames and draw the particles onto the Canvas. This is the heart of the project and allows us to give the viewer an animation-like effect.</p>
             <div class="code-block">
                 <code>
                    <pre>
-                function render(){
-                   //Controls the frame rate, like a game loop
-                   setInterval(function(){
-                      //Drawing the background allows us to refresh the frames. Without it, each particle would leave behind a stream of particles tailing it
-                      ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
-                      ctx.fillRect(0, 0, screen.width-screen.width/100, screen.height-screen.height/11.5);
-                      for(var i = 0; i < box.length; i++){
-                         //The draw function draws each box to the canvas one by one
-                         box[i].draw();
-                         if(box[i].y > screen.height-screen.height/6){
-                            //If the individual particle has “fallen” out of the canvas, delete it from the vars. This saves memory and allows us to theoretically create as many fireworks as we want.
-                            box.splice(i, 1);
-                            xInitial.splice(i, 1);
-                            yInitial.splice(i, 1);
-                         }
+          function render(){
+              //Controls the frame rate, like a game loop
+              setInterval(function(){
+                  //Drawing the background allows us to refresh the frames. Without it, each particle would leave behind a stream of particles tailing it
+                  ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+                  ctx.fillRect(0, 0, screen.width-screen.width/100, screen.height-screen.height/11.5);
+                  for(var i = 0; i < box.length; i++){
+                      //The draw function draws each box to the canvas one by one
+                      box[i].draw();
+                      if(box[i].y > screen.height-screen.height/6){
+                          //If the individual particle has “fallen” out of the canvas, delete it from the vars. This saves memory and allows us to theoretically create as many fireworks as we want.
+                          box.splice(i, 1);
+                          xInitial.splice(i, 1);
+                          yInitial.splice(i, 1);
                       }
-                   }, 30);
-                }
-                   //Call the render method at the end
-                   render();
+                  }
+              }, 30);
+          }
+          //Call the render method at the end
+          render();
                    </pre>
                </code>
             </div>
-            <p class="info">In the render method, we manage everything from the frame rate to drawing the individual boxes onto the Canvas.</p>
+            <p>In the render method, we manage everything from the frame rate to drawing the individual boxes onto the Canvas.</p>
         </div>
+        <hr id="line">
+        <!--Finished Version Elements-->
         <div class="container">
-            <h1><a href="https://anshul2004.github.io/Blog/src/Aug-2-2018/fireworks.html">Click Here to See the Finished Version!!</a></h1>
+            <h1><a href="fireworks.html">Click Here to See the Finished Version!!</a></h1>
             <br>
-            <p class="info">For more resources visit: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial</p>
+            <p>For more resources visit: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial</p>
         </div>
-        <div id="contact">
-            <p>Feel free to contact me via <a href="mailto:cyberblaze.12.2004@gmail.com?Subject=Hey">Email</a>. Please only provide positive and helpful critisism :)</p>
+        <!--Footer Area-->
+        <div id="main-footer">
+            <p>&copy; 2018 Anshul</p>
+            <a href="mailto:cyberblaze2004@gmail.com">
+                <img src="../../res/email.png" style="max-width: 6%; margin-left: 80%; margin-top: -3%;">
+            </a>
         </div>
     </body>
 </html>
