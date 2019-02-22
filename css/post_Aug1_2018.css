@@ -1,89 +1,238 @@
-@media (min-width: 10px) {
-    body{
-        background: black;
-    }
+/*Background Styles*/
+body{
+  background: #eaeaea;
+  margin: 0;
+  padding: 0;
 }
-@media (min-width: 1500px) {
-    body{
-        background-size: 100%, 50%;
-        background-attachment: fixed;
-        background-position: center;
-        background-image: url("https://images.unsplash.com/photo-1533059791768-d5336afe8795?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=380d12f0f686594e9ae1cf6faa5bbc7f&auto=format&fit=crop&w=3298&q=80");
-    }
+
+/*Back Link Styles*/
+#back{
+  margin-left: 3%;
+  margin-top: 3%;
 }
-body a{
-  color: white;
-}
-/*Title area*/
-#title-area{
-  text-align: center;
-  padding-bottom: 10em;
-}
-#title-area h2{
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  font-size: 3em;
-}
-/*Container*/
-.container{
-  padding: 1em;
-}
-/*Code box*/
-.code-block{
-  background-color: #eaeaea;
-  padding: 1em;
-}
-/*Subtitles*/
-.subtitle{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 2.5em;
-}
-/*Info*/
-.info{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  font-size: 1.5em;
-  padding-bottom: 2em;
-  text-align: left;
-  text-indent: 2em;
-}
-/*Contact*/
-#contact{
-  background-color: grey;
-  padding: 1em;
-  margin-top: 10em;
-}
-#contact p{
-  text-align: center;
-  padding: 1em;
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5em;
-}
-/*Code block*/
-pre{
-  white-space: pre-wrap;
-}
-/*Lists*/
-#prerequisite-area{
-  padding: 1em;
-}
-#prerequisite-area li{
-  font-family: "Quicksand", sans-serif;
-  color: white;
-  font-size: 1.5em;
-  padding-bottom: 2em;
-}
-/*Back*/
 #back a{
-  font-size: 2em;
-  color: white;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", serif;
+  font-size: 2vw;
   text-decoration: none;
+  color: #494949;
+  border-radius: 10px;
+  border: 2px solid #494949;
+  padding: 0.75% 2% 0.75% 2%;
 }
 #back a:hover{
-  color: grey;
-  text-decoration: underline;
+  background: white;
+}
+
+/*Title Area Styles*/
+#title-area{
+  margin-left: 10%;
+  margin-top: 5%;
+}
+#title-area h1{
+  font-family: "Raleway", serif;
+  font-size: 3vw;
+  color: #494949;
+}
+#title-area p{
+  font-family: "Raleway", serif;
+  font-size: 1vw;
+  color: #494949;
+  margin-left: 60%;
+}
+
+/*Notes Area Styles*/
+#notes-area{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#notes-area h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#notes-area p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Prerequisite Area Styles*/
+#prerequisite-area{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#prerequisite-area h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#prerequisite-area li{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Overview Area Styles*/
+#overview-area{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#overview-area h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#overview-area p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Introduction Area Styles*/
+#introduction-area{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#introduction-area h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#introduction-area p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*JPanel Area Styles*/
+#jpanel-overview{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#jpanel-overview h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#jpanel-overview p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Thread Area Styles*/
+#thread-area{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#thread-area h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#thread-area p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Game Loop Area Styles*/
+#game-loop{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#game-loop h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#game-loop p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Graphics Area Styles*/
+#graphics-area{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#graphics-area h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#graphics-area p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Graphics Area Styles*/
+#shapes-area{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#shapes-area h1{
+  font-family: "Raleway", serif;
+  font-size: 2vw;
+  color: #494949;
+}
+#shapes-area p{
+  font-family: "Raleway", serif;
+  font-size: 1.5vw;
+  color: #494949;
+  line-height: 2em;
+  text-indent: 5%;
+}
+
+/*Footer Area Styles*/
+#main-footer{
+  margin-top: -20px;
+  padding-bottom: 5%;
+  background: white;
+}
+#main-footer p{
+  font-family: "Raleway", serif;
+  font-size: 1vw;
+  padding-top: 5%;
+  margin-left: 10%;
+}
+
+/*Global Styles*/
+#line{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.code-box{
+  background: #f7f7f7;
+  margin: 0;
+  overflow: scroll;
 }

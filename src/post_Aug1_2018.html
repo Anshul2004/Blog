@@ -1,50 +1,60 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Keywords" content="Anshul, Kashyap, Blog, Programming, IOS, Android, Swing, Java, Python, Servers, Data, Web development">
-    <meta name="Description" content="Aug 1, 2018: Creating graphics using Swing">
-    <title>August 1, 2018: Creating Graphics using Swing</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="shortcut icon" href="https://anshul2004.github.io/Blog/res/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
-    <link href="https://anshul2004.github.io/Blog/css/post_Aug1_2018.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <script>
-      AOS.init();
-    </script>
-    <div id="back" data-aos="fade-in" data-aos-duration="1500">
-      <a href="https://anshul2004.github.io/Blog/index.html">Home</a>
-    </div>
-    <div id="title-area" data-aos="fade-up" data-aos-duration="1500">
-      <h2>August 1, 2018: Creating Graphics using Swing</h2>
-    </div>
-    <div class="container">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">Note:</h1>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">This is the absolute basic way to use Swing. If you want me to go into more depth, email me at the bottom. I am not creating any external classes for any game objects such as the player, enemy, etc. This entry is just for graphical purposes and to teach you about displaying graphics, not designing a game.</p>
-    </div>
-    <div id="prerequisite-area">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">Prerequisites:</h1>
-      <ul>
-        <li data-aos="fade-left" data-aos-duration="1500">Basic knowledge of Java</li>
-        <li data-aos="fade-left" data-aos-duration="1500">The ability to apply OOP ideas to projects</li>
-        <li data-aos="fade-left" data-aos-duration="1500">Java installed on your desktop (IDE is preferred)</li>
-      </ul>
-    </div>
-    <div class="container">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">Overview:</h1>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Swing is a Java graphics library that allows the user to quickly and efficiently implement and use graphics to create a desktop application. Swing is quite easy to learn as the basic concepts and ideas are all you need to know to create very intricate applications. Swing can be used for many types of applications including: Games, TextEdit softwares, Vital applications such as say… a calculator, etc. The list goes on and on. The resources that swing provide the user allows them to create a vast variety of applications showing the true capabilities of Swing and its ability to create desktop applications.</p>
-    </div>
-    <div class="container">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">Introduction:</h1>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Just like any other graphics library, Swing has special functions that allow the user to create their own custom application. To get started, let’s first import Swing and create a basic window. We can create a window by using the JFrame utility that Swing provides us. This is basically the shell of our application and the container for all the graphics we will be displaying.</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Create a new file called Main.java in a package:</p>
-      <div class="code-block" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
+    <head>
+        <!--Meta Data-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="Anshul, Kashyap, Blog, Programming, IOS, Android, Swing, Java, Python, Servers, Data, Web development, Cyber, Blaze">
+        <meta name="Description" content="August 1, 2018: Creating Graphics Using Swing">
+        <!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="../css/post_Aug1_2018.css">
+        <!--Custom Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <!--Tab Information-->
+        <link rel="shortcut icon" href="../res/favicon.png">
+        <title>August 1, 2018: Creating Graphics Using Swing</title>
+    </head>
+    <body>
+        <!--Back Link-->
+        <div id="back">
+            <a href="../index.html">Home</a>
+        </div>
+        <!--Title Area Elements-->
+        <div id="title-area">
+            <h1>August 1, 2018: Creating Graphics Using Swing</h1>
+            <p>- Anshul Kashyap; August 1, 2018</p>
+        </div>
+        <!--Notes Area Elements-->
+        <div id="notes-area">
+            <h1>Note:</h1>
+            <p>This is the absolute basic way to use Swing. If you want me to go into more depth, email me at the bottom. I am not creating any external classes for any game objects such as the player, enemy, etc. This entry is just for graphical purposes and to teach you about displaying graphics, not designing a game.</p>
+        </div>
+        <hr id="line">
+        <!--Prerequisite Area Elements-->
+        <div id="prerequisite-area">
+            <h1>Prerequisites:</h1>
+            <ul>
+                <li>Basic knowledge of Java</li>
+                <li>The ability to apply OOP ideas to projects</li>
+                <li>Java installed on your desktop (IDE is preferred)</li>
+            </ul>
+        </div>
+        <hr id="line">
+        <!--Overview Area Elements-->
+        <div id="overview-area">
+            <h1>Overview:</h1>
+            <p>Swing is a Java graphics library that allows the user to quickly and efficiently implement and use graphics to create a desktop application. Swing is quite easy to learn as the basic concepts and ideas are all you need to know to create very intricate applications. Swing can be used for many types of applications including: Games, TextEdit softwares, Applications such as calculators, etc. The list goes on and on. The resources that swing provide the user allows them to create a vast variety of applications showing the true capabilities of Swing and its ability to create desktop applications.</p>
+        </div>
+        <hr id="line">
+        <!--Introduction Area Elements-->
+        <div id="introduction-area">
+            <h1>Introduction:</h1>
+            <p>Just like any other graphics library, Swing has special functions that allow the user to create their own custom application. To get started, let’s first import Swing and create a basic window. We can create a window by using the JFrame utility that Swing provides us. This is basically the shell of our application and the container for all the graphics we will be displaying.</p>
+            <div class="code-box">
+                <code>
+                    <pre>
           //Import statement for JFrame
           import javax.swing.JFrame; 
           public class Main{
@@ -61,45 +71,50 @@
                   window.setVisible(true);
               }
           }
-          </pre>
-        </code>
-      </div>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">When I first started, I had a hard time remembering all of these functions. The only way to learn it is to keep applying it just like any other skill in the real world.</p>
-    </div>
-    <div class="container">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">JPanel:</h1>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">We have our frame, but where is our picture? In Swing, you can think of the JPanel class as the picture that you place inside of the frame. JPanel is the actual container for all the graphics and JFrame is a JPanel container. To create a JPanel, you have to create a class that inherits all the attributes of the JPanel class.</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Create a new file called Panel.java in the same package as Main.java:</p>
-      <div class="code-block" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
+                    </pre>
+                </code>
+            </div>
+            <p>When I first started, I had a hard time remembering all of these functions. The only way to learn it is to keep applying it just like any other skill in the real world.</p>
+        </div>
+        <hr id="line">
+        <!--JPanel Area Elements-->
+        <div id="jpanel-overview">
+            <h1>JPanel:</h1>
+            <p>We have our frame, but where is our picture? In Swing, you can think of the JPanel class as the picture that you place inside of the frame. JPanel is the actual container for all the graphics and JFrame is a JPanel container. To create a JPanel, you have to create a class that inherits all the attributes of the JPanel class.</p>
+            <p>Create a new file called Panel.java in the same package as Main.java:</p>
+            <div class="code-box">
+                <code>
+                    <pre>
           //Import statement for JPanel
           import javax.swing.JPanel
           //Take note of the “extends” keyword. It shows that inheritance is taking place
           public class Panel extends JPanel{
               //Constructor
               public Panel(){
-              
+
               }
           }
-          </pre>
-        </code>
-      </div>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Now back in our Main.java file, let’s add the JPanel. Below the window object initialization line:</p>
-      <div class="code-block">
-        <code data-aos="fade-right" data-aos-duration="1500">
-          <pre>
+                    </pre>
+                </code>
+            </div>
+            <p>Now back in our Main.java file, let’s add the JPanel. Below the window object initialization line:</p>
+            <div class="code-box">
+                <code>
+                    <pre>
           //Adds a new Panel object to the window
           window.add(new Panel());
-          </pre>
-        </code>
-      </div>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Okay, now we need some type of loop that keep the application running until the user wants to quit it. In java, every line of code inside of the main function executes only once… just once. We don’t want that to happen to our game, so we have to create a game loop that allows the game to keep updating the frames. In swing, we use something called a thread to execute a program. A thread is basically a path that the compiler follows. To use the thread, we have to implement the Runnable class. You can get more info about the Runnable class at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html">https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html</a>.</p>
-    </div>
-    <div class="container">
-      <div class="code-block" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
+                    </pre>
+                </code>
+            </div>
+        </div>
+        <hr id="line">
+        <!--Thread Area Elements-->
+        <div id="thread-area">
+            <h1>Thread:</h1>
+            <p>Okay, now we need some type of loop that keep the application running until the user wants to quit it. In java, every line of code inside of the main function executes only once… just once. We don’t want that to happen to our game, so we have to create a game loop that allows the game to keep updating the frames. In swing, we use something called a thread to execute a program. A thread is basically a path that the compiler follows. To use the thread, we have to implement the Runnable class. You can get more info about the Runnable class at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html">https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html</a>.</p>
+            <div class="code-box">
+                <code>
+                    <pre>
           public class Panel extends JPanel implements Runnable{
               //Creating Thread object
               private Thread thread;
@@ -116,20 +131,21 @@
               }
               //Initial method that comes with the Runnable class. All the updates for the graphics and rendering will sprout out of here
               public void run(){
+
               }
           }
-          </pre>
-        </code>
-      </div>
-    </div>
-    <div class="container">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">Loop:</h1>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Alright, we have created the JPanel, now let’s move onto the root of the application, the loop. This allows us to control frame updates, rendering, and possibly everything that is vital to the application.</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">In the Panel.java class, in the run() method:</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">In the Panel.java class, create the render() method:</p>
-      <div class="code-block" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
+                    </pre>
+                </code>
+            </div>
+        </div>
+        <hr id="line">
+        <!--Game Loop Area-->
+        <div id="game-loop">
+            <h1>Loop:</h1>
+            <p>Alright, we have created the JPanel, now let’s move onto the root of the application, the loop. This allows us to control frame updates, rendering, and possibly everything that is vital to the application.</p>
+            <div class="code-box">
+                <code>
+                    <pre>
           public void run(){
               //For fps purposes
               int frames = 0;
@@ -143,6 +159,7 @@
                   } catch (InterruptedException e) {
                       e.printStackTrace();
                   }
+                  //Calling the render method
                   render();
                   //For fps purposes
                   frames++;
@@ -156,47 +173,51 @@
                   }
               }
           }
+          //Calls this method every time the computer renders one frame
           public void render(){
+
           }
-          </pre>
-        </code>
-      </div>
-    </div>
-    <div class="container">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">Beginning Graphics:</h1>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Finally!!! The good part. We will now start displaying graphics to the screen. To do this, we have to create a new function in the Panel.java file. It is called “paintComponent(g)”. paintComponent has 1 parameter, a Graphics object. Using this graphics object and its functions, we will be able to display graphics onto the window.</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">In the Panel.java class, create a new method called paintComponent with a Graphics object as a parameter.</p>
-      <div class="code-block" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
+                    </pre>
+                </code>
+            </div>
+        </div>
+        <hr id="line">
+        <!--Beginning Graphics Elements-->
+        <div id="graphics-area">
+            <h1>Beginning Graphics:</h1>
+            <p>Finally!!! The good part. We will now start displaying graphics to the screen. To do this, we have to create a new function in the Panel.java file. It is called “paintComponent(g)”. paintComponent has 1 parameter, a Graphics object. Using this graphics object and its functions, we will be able to display graphics onto the window.</p>
+            <p>In the Panel.java class, create a new method called paintComponent with a Graphics object as a parameter.</p>
+            <div class="code-box">
+                <code>
+                    <pre>
           //New import statements at the top
           import java.awt.Graphics;
           import java.awt.Graphics2D;
-          
+                    
           ...
-          
+                    
           public void paintComponent(Graphics g){
               Graphics2D g2 = (Graphics2D) g;
               super.paintComponent(g2);
           }
-          </pre>
-        </code>
-      </div>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">In this function, we will be able to display different polynomials and distinct shape using the classes that the awt library provides us.</p>
-    </div>
-    <div class="container">
-      <h1 class="subtitle" data-aos="fade-left" data-aos-duration="1000">Drawing Shapes:</h1>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Using the awt library, we can draw different shapes and interact with them as well.</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">In the Panel.java file, create a new Rectangle object:</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">In the Panel.java file, draw the Rectangle object using the Graphics2D object:</p>
-      <div class="code-block" data-aos="fade-right" data-aos-duration="1000">
-        <code>
-          <pre>
+                    </pre>
+                </code>
+            </div>
+            <p>In this function, we will be able to display different polynomials and distinct shape using the classes that the awt library provides us.</p>
+        </div>
+        <hr id="line">
+        <!--Drawing Shapes Elements-->
+        <div id="shapes-area">
+            <h1>Drawing Shapes:</h1>
+            <p>Using the awt library, we can draw different shapes and interact with them as well.</p>
+            <div class="code-box">
+                <code>
+                    <pre>
           //Initial import statement
           import java.awt.Rectangle;
-          
-          …
-          
+                    
+          ...
+                    
           //Creating the box object
           Rectangle box;
           //In the constructor
@@ -220,14 +241,18 @@
               //Filling the box, g2.draw(box) just draws the outline
               g2.fill(box);
           }
-          </pre>
-        </code>
-      </div>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">Now, when you run the program, you should see a white box in the top left corner. That is the end of the entry today. If you want to know more, check out the resources below or email me at the bottom.</p>
-      <p class="info" data-aos="fade-left" data-aos-duration="1500">For more resources: <a href="https://docs.oracle.com/javase/tutorial/uiswing/">https://docs.oracle.com/javase/tutorial/uiswing/</a></p>
-    </div>
-    <div id="contact">
-      <p data-aos="fade-right" data-aos-duration="1000">Feel free to contact me via <a href="mailto:cyberblaze.12.2004@gmail.com?Subject=Hey">Email</a>. Please only provide positive and helpful critisism :)</p>
-    </div>
-  </body>
+                    </pre>
+                </code>
+            </div>
+            <p>Now, when you run the program, you should see a white box in the top left corner. That is the end of the entry today. If you want to know more, check out the resources below or email me at the bottom.</p>
+            <p>For more resources: <a href="https://docs.oracle.com/javase/tutorial/uiswing/">https://docs.oracle.com/javase/tutorial/uiswing/</a></p>
+        </div>
+        <!--Footer Area-->
+        <div id="main-footer">
+            <p>&copy; 2018 Anshul</p>
+            <a href="mailto:cyberblaze2004@gmail.com">
+                <img src="../res/email.png" style="max-width: 6%; margin-left: 80%; margin-top: -3%;">
+            </a>
+        </div>
+    </body>
 </html>
