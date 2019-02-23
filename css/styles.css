@@ -9,81 +9,173 @@ body{
     padding: 0;
 }
 
-/*Text Area Styles*/
-#title-area h1{
-    font-family: "Pacifico", serif;
-    font-size: 6vw;
-    text-align: left;
-    margin-left: 20%;
-    margin-top: 10%;
-    color: black;
-}
-#title-area p{
-    font-family: "Raleway", serif;
-    font-size: 2vw;
-    text-align: left;
-    margin-left: 25%;
-    margin-top: 10%;
-    color: black;
-}
+@media only screen and (min-width: 1000px) {
+    /*Text Area Styles*/
+    #title-area h1{
+        font-family: "Pacifico", serif;
+        font-size: 6vw;
+        text-align: left;
+        margin-left: 20%;
+        margin-top: 10%;
+        color: black;
+    }
+    #title-area p{
+        font-family: "Raleway", serif;
+        font-size: 2vw;
+        text-align: left;
+        margin-left: 25%;
+        margin-top: 10%;
+        color: black;
+    }
 
-/*Description Area Styles*/
-#short-description{
-    background: white;
-    padding: 5%;
-    margin-top: 15%;
-}
-#short-description h1{
-    font-family: "Raleway", serif;
-    font-size: 2vw;
-    color:#494949;
-}
-#description-content{
-    font-family: "Raleway", serif;
-    font-size: 1.5vw;
-    color: #494949;
-    line-height: 250%;
-    text-indent: 5%;
-    margin-top: 5%;
-}
+    /*Description Area Styles*/
+    #short-description{
+        background: white;
+        padding: 5%;
+        margin-top: 15%;
+    }
+    #short-description h1{
+        font-family: "Raleway", serif;
+        font-size: 2vw;
+        color:#494949;
+    }
+    #description-content{
+        font-family: "Raleway", serif;
+        font-size: 1.5vw;
+        color: #494949;
+        line-height: 250%;
+        text-indent: 5%;
+        margin-top: 5%;
+    }
 
-/*Entries Area Styles*/
-#entries-area{
-    background-color: #e8e8e8;
-    padding-bottom: 8%;
-}
-#entries-area h1{
-    font-family: "Raleway", serif;
-    font-size: 3vw;
-    margin-left: 30%;
-    color: #494949;
-}
-#entries-area a{
-    font-family: "Quicksand", sans-serif;
-    font-size: 2vw;
-    text-decoration: none;
-    color: #494949;
-    margin-left: 20%;
-}
-#entries-area a:hover{
-    color: grey;
-    font-size: 2vw;
-    margin-left: 20%;
-}
-#entries-area td{
-    padding-top: 5%;
-    margin-left: 20%;
-}
+    /*Entries Area Styles*/
+    #entries-area{
+        background-color: #e8e8e8;
+        padding-bottom: 8%;
+    }
+    #entries-area h1{
+        font-family: "Raleway", serif;
+        font-size: 3vw;
+        margin-left: 30%;
+        color: #494949;
+    }
+    #entries-area a{
+        font-family: "Quicksand", sans-serif;
+        font-size: 2vw;
+        text-decoration: none;
+        color: #494949;
+        margin-left: 20%;
+    }
+    #entries-area a:hover{
+        color: grey;
+        font-size: 2vw;
+        margin-left: 20%;
+    }
+    #entries-area td{
+        padding-top: 5%;
+        margin-left: 20%;
+    }
 
-/*Footer Area Styles*/
-#main-footer{
-    margin-top: -20px;
-    padding-bottom: 5%;
-    background: white;
+    /*Footer Area Styles*/
+    #main-footer{
+        margin-top: -20px;
+        padding-bottom: 5%;
+        background: white;
+    }
+    #main-footer p{
+        font-family: "Raleway", serif;
+        font-size: 1vw;
+        padding-top: 5%;
+        margin-left: 10%;
+    }
+    #main-footer img{
+        max-width: 5%; 
+        margin-left: 80%; 
+        margin-top: -3%;
+    }
 }
-#main-footer p{
-    font-family: "Raleway", serif;
-    font-size: 1vw;
-    padding-top: 5%;
-    margin-left: 10%;
+/*Mobile Friendly Styles*/
+@media only screen and (max-width: 1000px) {
+    /*Text Area Styles*/
+    #title-area{
+        padding: 15%;
+    }
+    #title-area h1{
+        font-family: "Pacifico", serif;
+        font-size: 3em;
+        text-align: left;
+        margin-top: 10%;
+        color: black;
+    }
+    #title-area p{
+        font-family: "Raleway", serif;
+        font-size: 2em;
+        text-align: left;
+        margin-top: 10%;
+        color: black;
+    }
+
+    /*Description Area Styles*/
+    #short-description{
+        background: white;
+        padding: 10%;
+        margin-top: 15%;
+    }
+    #short-description h1{
+        font-family: "Raleway", serif;
+        font-size: 1.5em;
+        color:#494949;
+    }
+    #description-content{
+        font-family: "Raleway", serif;
+        font-size: 1em;
+        color: #494949;
+        line-height: 250%;
+        text-indent: 5%;
+        margin-top: 5%;
+    }
+
+    /*Entries Area Styles*/
+    #entries-area{
+        background-color: #e8e8e8;
+        padding: 15%;
+        padding-bottom: 20%;
+        padding-top: 10%;
+    }
+    #entries-area h1{
+        font-family: "Raleway", serif;
+        font-size: 1.5em;
+        color: #494949;
+    }
+    #entries-area a{
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.3em;
+        text-decoration: none;
+        color: #494949;
+    }
+    #entries-area a:hover{
+        color: grey;
+        font-size: 1.3em;
+    }
+    #entries-area td{
+        padding-top: 15%;
+    }
+
+    /*Footer Area Styles*/
+    #main-footer{
+        margin-top: -20px;
+        padding-bottom: 5%;
+        background: white;
+    }
+    #main-footer p{
+        font-family: "Raleway", serif;
+        font-size: 1em;
+        padding-top: 10%;
+        margin-left: 10%;
+    }
+    #main-footer img{
+        max-width: 5em; 
+        margin-left: 70%; 
+        margin-top: -15%;
+    }
 }

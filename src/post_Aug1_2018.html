@@ -23,17 +23,17 @@
         </div>
         <!--Title Area Elements-->
         <div id="title-area">
-            <h1>August 1, 2018: Creating Graphics Using Swing</h1>
+            <h1>Creating Graphics Using Swing</h1>
             <p>- Anshul Kashyap; August 1, 2018</p>
         </div>
         <!--Notes Area Elements-->
-        <div id="notes-area">
+        <div class="container">
             <h1>Note:</h1>
             <p>This is the absolute basic way to use Swing. If you want me to go into more depth, email me at the bottom. I am not creating any external classes for any game objects such as the player, enemy, etc. This entry is just for graphical purposes and to teach you about displaying graphics, not designing a game.</p>
         </div>
         <hr id="line">
         <!--Prerequisite Area Elements-->
-        <div id="prerequisite-area">
+        <div class="container">
             <h1>Prerequisites:</h1>
             <ul>
                 <li>Basic knowledge of Java</li>
@@ -43,13 +43,13 @@
         </div>
         <hr id="line">
         <!--Overview Area Elements-->
-        <div id="overview-area">
+        <div class="container">
             <h1>Overview:</h1>
             <p>Swing is a Java graphics library that allows the user to quickly and efficiently implement and use graphics to create a desktop application. Swing is quite easy to learn as the basic concepts and ideas are all you need to know to create very intricate applications. Swing can be used for many types of applications including: Games, TextEdit softwares, Applications such as calculators, etc. The list goes on and on. The resources that swing provide the user allows them to create a vast variety of applications showing the true capabilities of Swing and its ability to create desktop applications.</p>
         </div>
         <hr id="line">
         <!--Introduction Area Elements-->
-        <div id="introduction-area">
+        <div class="container">
             <h1>Introduction:</h1>
             <p>Just like any other graphics library, Swing has special functions that allow the user to create their own custom application. To get started, let’s first import Swing and create a basic window. We can create a window by using the JFrame utility that Swing provides us. This is basically the shell of our application and the container for all the graphics we will be displaying.</p>
             <div class="code-box">
@@ -78,10 +78,9 @@
         </div>
         <hr id="line">
         <!--JPanel Area Elements-->
-        <div id="jpanel-overview">
+        <div class="container">
             <h1>JPanel:</h1>
             <p>We have our frame, but where is our picture? In Swing, you can think of the JPanel class as the picture that you place inside of the frame. JPanel is the actual container for all the graphics and JFrame is a JPanel container. To create a JPanel, you have to create a class that inherits all the attributes of the JPanel class.</p>
-            <p>Create a new file called Panel.java in the same package as Main.java:</p>
             <div class="code-box">
                 <code>
                     <pre>
@@ -109,9 +108,9 @@
         </div>
         <hr id="line">
         <!--Thread Area Elements-->
-        <div id="thread-area">
+        <div class="container">
             <h1>Thread:</h1>
-            <p>Okay, now we need some type of loop that keep the application running until the user wants to quit it. In java, every line of code inside of the main function executes only once… just once. We don’t want that to happen to our game, so we have to create a game loop that allows the game to keep updating the frames. In swing, we use something called a thread to execute a program. A thread is basically a path that the compiler follows. To use the thread, we have to implement the Runnable class. You can get more info about the Runnable class at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html">https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html</a>.</p>
+            <p>Okay, now we need some type of loop that keep the application running until the user wants to quit it. In java, every line of code inside of the main function executes only once… just once. We don’t want that to happen to our game, so we have to create a game loop that allows the game to keep updating the frames. In swing, we use something called a thread to execute a program. A thread is basically a path that the compiler follows. To use the thread, we have to implement the Runnable class. You can get more info about the Runnable class at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html">https://docs.oracle.com/javase/7/docs/api/java/lang/ Runnable.html</a>.</p>
             <div class="code-box">
                 <code>
                     <pre>
@@ -140,7 +139,7 @@
         </div>
         <hr id="line">
         <!--Game Loop Area-->
-        <div id="game-loop">
+        <div class="container">
             <h1>Loop:</h1>
             <p>Alright, we have created the JPanel, now let’s move onto the root of the application, the loop. This allows us to control frame updates, rendering, and possibly everything that is vital to the application.</p>
             <div class="code-box">
@@ -183,10 +182,9 @@
         </div>
         <hr id="line">
         <!--Beginning Graphics Elements-->
-        <div id="graphics-area">
+        <div class="container">
             <h1>Beginning Graphics:</h1>
             <p>Finally!!! The good part. We will now start displaying graphics to the screen. To do this, we have to create a new function in the Panel.java file. It is called “paintComponent(g)”. paintComponent has 1 parameter, a Graphics object. Using this graphics object and its functions, we will be able to display graphics onto the window.</p>
-            <p>In the Panel.java class, create a new method called paintComponent with a Graphics object as a parameter.</p>
             <div class="code-box">
                 <code>
                     <pre>
@@ -207,7 +205,7 @@
         </div>
         <hr id="line">
         <!--Drawing Shapes Elements-->
-        <div id="shapes-area">
+        <div class="container">
             <h1>Drawing Shapes:</h1>
             <p>Using the awt library, we can draw different shapes and interact with them as well.</p>
             <div class="code-box">
@@ -251,7 +249,7 @@
         <div id="main-footer">
             <p>&copy; 2018 Anshul</p>
             <a href="mailto:cyberblaze2004@gmail.com">
-                <img src="../res/email.png" style="max-width: 6%; margin-left: 80%; margin-top: -3%;">
+                <img src="../res/email.png">
             </a>
         </div>
     </body>
